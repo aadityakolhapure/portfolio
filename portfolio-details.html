@@ -2,175 +2,670 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>iPortfolio Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
+        aria-controls="sidebar-multi-level-sidebar" type="button"
+        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+            </path>
+        </svg>
+    </button>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <aside id="sidebar-multi-level-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-900 dark:bg-gray-900">
+            <ul class="space-y-2 font-medium text-white">
+                <li>
+                    <div class="profile flex flex-col items-center text-center">
+                        <img class="rounded w-36 h-36 mx-auto" src="/assets/img/img.jpg" alt="Extra large avatar">
+                        <h1 class="text-light mt-2"><a href="index.html" class="text-white">Aaditya Kolhapure</a></h1>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter mx-1"><i class="fab fa-github text-white"></i></a>
+                            <a href="#" class="instagram mx-1"><i class="fab fa-instagram text-white"></i></a>
+                            <a href="#" class="linkedin mx-1"><i class="fab fa-linkedin text-white"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-white rounded-lg hover:bg-gray-700 group">
+                        <i class="fas fa-home flex-shrink-0 w-5 h-5 text-gray-400 group-hover:text-white"></i>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="flex items-center p-2 text-white rounded-lg hover:bg-gray-700 group">
+                        <i class="fas fa-info-circle flex-shrink-0 w-5 h-5 text-gray-400 group-hover:text-white"></i>
+                        <span class="flex-1 ms-3 whitespace-nowrap">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#education" class="flex items-center p-2 text-white rounded-lg hover:bg-gray-700 group">
+                        <i class="fas fa-file-alt flex-shrink-0 w-5 h-5 text-gray-400 group-hover:text-white"></i>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skill" class="flex items-center p-2 text-white rounded-lg hover:bg-gray-700 group">
+                        <i class="fas fa-cogs flex-shrink-0 w-5 h-5 text-gray-400 group-hover:text-white"></i>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Skills</span>
+                    </a>
+                </li>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+                <li>
+                    <a href="#project" class="flex items-center p-2 text-white rounded-lg hover:bg-gray-700 group">
+                        <i
+                            class="fas fa-project-diagram flex-shrink-0 w-5 h-5 text-gray-400 group-hover:text-white"></i>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Project</span>
+                    </a>
+                </li>
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+                <li>
+                    <a href="#contact" class="flex items-center p-2 text-white rounded-lg hover:bg-gray-700 group">
+                        <i class="fas fa-envelope flex-shrink-0 w-5 h-5 text-gray-400 group-hover:text-white"></i>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Contact</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-      </div>
+    </aside>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+    <div class="p-0 sm:ml-64">
+        <section id="hero" class="d-flex flex-column justify-content-center align-items-center p-5 bg-gray-800">
+            <div class="hero-container" data-aos="fade-in">
+                <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+                    style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                    Aaditya Kolhapure
+                </h1>
+
+                <p>I'm <span class="typed" data-typed-items="Frontend developer, Backend developer"
+                        style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"></span>
+                </p>
+
+                <button type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Hire
+                    Me</button>
+                <button type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Download Resume</button>
+            </div>
+        </section>
     </div>
-  </header><!-- End Header -->
 
-  <main id="main">
+    <!-- About Section  -->
+    <section id="about" class="about" style="background-color: aliceblue;">
+        <div class="p-4 sm:ml-64">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                        About</h2>
+                    <p class=" text-lg font-normal text-gray-500 lg:text-xl xl:px-10 dark:text-gray-400"> My name is
+                        Aaditya Pravin Kolhapure, and I hail from Satara. Currently, I am immersed in pursuing a
+                        Bachelor's degree in Technology with a specialization in Computer Science and Engineering at
+                        Dnyanshree Institute of Engineering and Technology. The name 'Aaditya', derived from Sanskrit,
+                        signifies 'Sun', a symbol of strength and courage, qualities that resonate deeply with me. <br>
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
+                        I pride myself on being a dedicated listener, always eager to understand and empathize with
+                        others. This trait not only helps me in my personal interactions but also makes me an effective
+                        team player in academic and professional settings. Moreover, I am inherently self-motivated,
+                        constantly seeking opportunities to challenge myself and grow both personally and
+                        intellectually.
+                        <br>
+                        In my approach to tasks and projects, I am known for being a smart worker, leveraging my skills
+                        and knowledge to achieve efficient and effective results. I believe in embracing challenges with
+                        enthusiasm, viewing each obstacle as an opportunity to learn and improve.
+                    </p>
+                </div>
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfoio Details</li>
-          </ol>
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <img src="assets/img/profile-removebg-preview.jpg" class="img-fluid" alt=""
+                            style="border-radius: 10px;">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                        <h3 class="fst-italic p-2">Web Developer :</h3>
+                        <p class="text-lg font-normal text-gray-500 lg:text-xl sm:px-4 dark:text-gray-400">
+                            I am a good web developer. I have done various project in web.
+                        </p>
+                        <div class="row p-2">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong
+                                            class="fst-italic p-1">Birthday:</strong>
+                                        <p class="text-gray-900 dark:text-white">28 January
+                                            2003</p>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong
+                                            class="fst-italic p-1">Website:</strong>
+                                        <span class="text-gray-900 dark:text-white">www.example.com</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong
+                                            class="fst-italic p-1">Phone:</strong>
+                                        <span class="text-gray-900 dark:text-white">+918983081348</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong
+                                            class="fst-italic p-1">City:</strong>
+                                        <span class="text-gray-900 dark:text-white">Satara,Maharashtra,India</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong class="fst-italic p-1">Age:</strong>
+                                        <span class="text-gray-900 dark:text-white">20</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong
+                                            class="fst-italic p-1">Degree:</strong> <span
+                                            class="text-gray-900 dark:text-white">Currently
+                                            Pursuing Bachalor</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong
+                                            class="fst-italic p-1">Email:</strong>
+                                        <span class="text-gray-900 dark:text-white">aadityakolhapure28@gmail.com
+                                           
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-      </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+    <div class="sm:ml-64" data-aos="fade-up">
+        <section id="education" class="resume">
 
-        <div class="row gy-4">
+            <div class="container">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <p>I am Aaditya Pravin Kolhapure. I am from Satara. Currently I am Pursing Bachalor In Technology
+                        from Computer Science And Engineering brach from Dnyanshree Institute of Engineering and
+                        Technology. </p>
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
-                </div>
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
-                </div>
+                        <!-- <div class="resume-item pb-0">
+                            <h4>Aaditya Kolhapure</h4>
+                            <p><em>As a dedicated Engineering student with a strong foundation in Computer Science and
+                                    Engineering branch,I am passionate about applying my knowledge in real-world.I have
+                                    good knowledge about web applications.Committed to continuous learning and staying
+                                    updated with industry trends,I am eager to contribute my skill and creativity to a
+                                    dynamic engineering team.</em></p>
+                            <ul>
+                                <li>Block nos.10 ST colony Godoli,Satara</li>
+                                <li>+91 8983081348</li>
+                                <li>aadityakolhapure28@gmail.com</li>
+                            </ul>
+                        </div> -->
 
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
+                        <h2 class="resume-title">Education</h2>
+                        <div class="resume-item">
+                            <h4>Bachalor in Technology</h4>
+                            <h5>2022 - 2025</h5>
+                            <p><em>Dnyanshree Institute of Engineering and Technology,Satara</em></p>
+                            <p><em>Branch: Computer Science and Engineering</em></p>
+                            <p><em>CGPA: 8.0</em></p>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Junior college &amp; Science</h4>
+                            <h5>2020 - 2021</h5>
+                            <p><em>Yashwantrao Chavan Institute of Science,Satara</em></p>
+                            <p>I completed my 11th and 12th from Science side.</p>
+                            <p>Percentage: 86.87%</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Schooling </h4>
+                            <h5>2009 - 2019</h5>
+                            <p><em>Gurukul School,Satara</em></p>
+                            <p><em>Percentage: 84.00%</em></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-        </div>
+                        <h2 class="resume-title">Certification Courses</h2>
+                        <div class="resume-item">
+                            <h4>C and C++ programming</h4>
+                            <h6><a
+                                    href="https://drive.google.com/file/d/1CKRSBiM10wIbsKRE5bI2noQkP4Yrlk7M/view?usp=drivesdk ">Download
+                                    certificate</a> </h6>
+                            <p><em>Internshala </em></p>
+                            <ul>
+                                <li>Course consist of basic of c proagramming.</li>
+                                <li>It includes knowledge about Object oriented Programming using CPP.</li>
+                                <li>It also consist of deep knowledge about c++</li>
+                                <li>I developed a project of cricket game application.</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Java programming</h4>
+                            <h6><a
+                                    href="https://drive.google.com/file/d/1CEbjn3xWZeAyY1p1QyckhsyM-crl1t_L/view?usp=drivesdk">Download
+                                    certificate</a> </h6>
+                            <p><em>Internshala </em></p>
+                            <ul>
+                                <li>Course consist of basic of Java proagramming.</li>
+                                <li>It includes knowledge about Object oriented Programming using java.</li>
+                                <li>I developed a project of hotel bill generator.</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Web development</h4>
+                            <h6><a
+                                    href="https://drive.google.com/file/d/1jj8nmvw58hDATjNbGAhX-KhdMDpZ1uQo/view?usp=drivesdk">Download
+                                    certificate</a> </h6>
+                            <p><em>Internshala </em></p>
+                            <ul>
+                                <li>Course teaches us html,css,javascript,php and react.</li>
+                                <li>It includes knowledge about bootstrap and dbms.</li>
+                                <li>I developed a website on hotel booking.</li>
+                            </ul>
+                        </div>
 
-      </div>
-    </section><!-- End Portfolio Details Section -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+                    </div>
+        </section>
     </div>
-  </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Skill Section -->
+    <section id="skill" class="resume" style="background-color: aliceblue;">
+        <div class="p-5 sm:ml-64">
+            <div class="section-title" data-aos="fade-up">
+                <h2
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    Skills</h2>
+            </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+            <div class="gap-8 sm:grid sm:grid-cols-2" data-aos="fade-up">
+                <div>
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">JAVA PROGRAMMING</dt>
+                        <dd class="flex items-center mb-3">
+                            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                                <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                    style="width: 88%; background-color: #173b6c;"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">88%</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">HTML</dt>
+                        <dd class="flex items-center mb-3">
+                            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                                <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                    style="width: 95%; background-color: #173b6c;"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">95%</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">CSS</dt>
+                        <dd class="flex items-center mb-3">
+                            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                                <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                    style="width: 78%; background-color: #173b6c;"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">78%</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">BOOTSTRAP</dt>
+                        <dd class="flex items-center">
+                            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                                <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                    style="width: 74%; background-color: #173b6c;"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">74%</span>
+                        </dd>
+                    </dl>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+                </div>
+                <div>
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">JAVASCRIPT</dt>
+                        <dd class="flex items-center mb-3">
+                            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                                <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                    style="width: 58%; background-color: #173b6c;"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">58%</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">PHP</dt>
+                        <dd class="flex items-center mb-3">
+                            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                                <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                    style="width: 75%; background-color: #173b6c;"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">75%</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">LARAVEL</dt>
+                        <dd class="flex items-center mb-3">
+                            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                                <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                    style="width: 58%; background-color: #173b6c;"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">58%</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">MYSQL</dt>
+                        <dd class="flex items-center">
+                            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                                <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                    style="width: 79%; background-color: #173b6c;"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">79%</span>
+                        </dd>
+                    </dl>
 
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class=" sm:ml-64" data-aos="fade-up">
+        <section id="project" class="portfolio section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Projects</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                        sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                        Quia
+                        fugiat sit
+                        in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-app">App</li>
+                            <li data-filter=".filter-card">Card</li>
+                            <li data-filter=".filter-web">Web</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <div class="sm:ml-64">
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                        sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                        Quia fugiat sit
+                        in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row m-2 flex-row justify-content-center" data-aos="fade-in">
+                    <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>10 ST Colony Godoli, Satara Maharashtra India 415001</p>
+                            </div>
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>aadityakolhapure28gmail.com</p>
+                            </div>
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>+91 8983081348/ +91 9890091348</p>
+                            </div>
+                            <!-- <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+                            <form action="">
+                                <div class="m-3">
+                                    <div>
+                                        <label for="input-group-1"
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                                        <input type="text" id="name"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="m-3">
+                                    <label for="input-group-1"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                        Email</label>
+                                    <div class="relative mb-6">
+                                        <div
+                                            class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 20 16">
+                                                <path
+                                                    d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                                                <path
+                                                    d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                                            </svg>
+                                        </div>
+                                        <input type="text" id="input-group-1"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            placeholder="name@flowbite.com">
+                                    </div>
+                                </div>
+
+                                <div class="m-3">
+                                    <div>
+                                        <label for="small-input"
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                                        <input type="text" id="subject"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            placeholder="subject">
+                                    </div>
+                                </div>
+
+                                <div class="m-3">
+                                    <label for="message"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                        message</label>
+                                    <textarea id="message" rows="4"
+                                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="Write your thoughts here..."></textarea>
+                                </div>
+
+                                <div class="m-3">
+                                    <button type="submit"
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                                </div>
+
+
+
+
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
