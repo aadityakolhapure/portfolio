@@ -1,7 +1,7 @@
 
-//   document.addEventListener('contextmenu', function(event) {
-//     event.preventDefault();
-//   });
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
 
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
