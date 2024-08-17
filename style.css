@@ -1,0 +1,11 @@
+@media(max-width: 480px) {
+    #tabs {
+        display: none;
+    }
+    #logo-sidebar{
+        margin-top: 80px;
+    }
+    #myname{
+        display:none;
+    }
+  }

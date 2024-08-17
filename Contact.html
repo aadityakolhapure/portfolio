@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VS Code Portfolio</title>
+    <title>Contact Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,7 +117,7 @@
                 </div>
 
                 <!-- Right side: Navigation arrows and search bar -->
-                <div class="flex justify-end ml-20 ">
+                <div class="flex justify-end ml-20 " id="myname">
 
                     <!-- Search bar -->
                     <div class=" ml-20">
@@ -136,13 +137,13 @@
         <aside id="logo-sidebar"
             class="fixed top-0 left-0 z-40 w-64 h-screen mt-12 transition-transform -translate-x-full border-r border-purple-700 sm:translate-x-0"
             aria-label="Sidebar">
-            <div class="overflow-y-auto flex flex-row bg-gray-900 dark:bg-gray-800 ">
+            <div class="overflow-y-auto flex flex-row bg-gray-900 dark:bg-gray-800">
                 <div
                     class="w-1/4 h-screen flex flex-col items-center bg-gray-800 border-r border-gray-700 justify-between">
                     <div>
                         <!-- Search icon -->
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200" width="24" height="24" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -150,28 +151,26 @@
                         </button>
 
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg class="w-6 h-6 text-gray-900 dark:text-white" aria-hidden="true"
+                            <svg class="w-6 h-6" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linejoin="round" stroke-width="2"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linejoin="round" stroke-width="2"
                                     d="M10 3v4a1 1 0 0 1-1 1H5m14-4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z" />
                             </svg>
-
                         </button>
 
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
+                            <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 7.205c4.418 0 8-1.165 8-2.602C20 3.165 16.418 2 12 2S4 3.165 4 4.603c0 1.437 3.582 2.602 8 2.602ZM12 22c4.963 0 8-1.686 8-2.603v-4.404c-.052.032-.112.06-.165.09a7.75 7.75 0 0 1-.745.387c-.193.088-.394.173-.6.253-.063.024-.124.05-.189.073a18.934 18.934 0 0 1-6.3.998c-2.135.027-4.26-.31-6.3-.998-.065-.024-.126-.05-.189-.073a10.143 10.143 0 0 1-.852-.373 7.75 7.75 0 0 1-.493-.267c-.053-.03-.113-.058-.165-.09v4.404C4 20.315 7.037 22 12 22Zm7.09-13.928a9.91 9.91 0 0 1-.6.253c-.063.025-.124.05-.189.074a18.935 18.935 0 0 1-6.3.998c-2.135.027-4.26-.31-6.3-.998-.065-.024-.126-.05-.189-.074a10.163 10.163 0 0 1-.852-.372 7.816 7.816 0 0 1-.493-.268c-.055-.03-.115-.058-.167-.09V12c0 .917 3.037 2.603 8 2.603s8-1.686 8-2.603V7.596c-.052.031-.112.059-.165.09a7.816 7.816 0 0 1-.745.386Z"/>
+                              </svg>
+                              
                         </button>
 
                         <!-- Git icon -->
                         <button href="https://github.com/AadityaKolhapure"
                             class="text-gray-400 hover:text-white focus:outline-none m-4">
                             <a href="https://github.com/AadityaKolhapure" target="_blank">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                     viewBox="0 0 24 24">
                                     <path fill-rule="evenodd"
@@ -185,7 +184,7 @@
                         <!-- Debug icon -->
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
                             <a href="https://www.linkedin.com/in/aaditya-kolhapure-534a2b241" target="_blank">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                     viewBox="0 0 24 24">
                                     <path fill-rule="evenodd"
@@ -199,7 +198,7 @@
 
                         <!-- Extensions icon -->
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200 dark:text-white" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 10h16M4 14h16M4 18h16" />
@@ -207,8 +206,8 @@
                         </button>
                     </div>
 
-                    <div class="mb-14">
-                        <button class="text-gray-400 hover:text-white focus:outline-none m-4">
+                    <div class="mb-16">
+                        <button class="text-gray-400 hover:text-white focus:outline-none ml-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0,0,300,150">
                                 <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
                                     stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
@@ -222,8 +221,8 @@
                                 </g>
                             </svg>
                         </button>
-                        <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        <button class="text-gray-400 hover:text-white focus:outline-none ml-4">
+                            <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                 viewBox="0 0 24 24">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -238,7 +237,7 @@
                 </div>
 
                 <!-- Additional content -->
-                <div class="w-full dark:bg-gray-800 p-4" style="background-color: #0c0020;">
+                <div class="w-full dark:bg-gray-800 p-4 " style="background-color: #0c0020;">
                     <div class="text-purple-700 dark:text-gray-300">
                         <span class="flex items-center justify-start text-purple-500">
                             <svg class="h-6 w-6 text-purple-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -252,12 +251,12 @@
                         <ul class="flex items-center space-x-2 mt-4">
                             <li>
                                 <a href="index.html" class="flex items-center space-x-2 cursor-pointer">
-                                    <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true"
+                                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z" />
                                     </svg>
-                                    <span class="text-gray-500">Home.html</span>
+                                    <span class="text-gray-200">Home.html</span>
                                 </a>
                             </li>
                         </ul>
@@ -266,14 +265,14 @@
                             <li>
                                 <a href="About.html"
                                     class="flex items-center space-x-2 text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
-                                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="M21.718 12c0-1.429-1.339-2.681-3.467-3.5.029-.18.077-.37.1-.545.217-2.058-.273-3.543-1.379-4.182-1.235-.714-2.983-.186-4.751 1.239C10.45 3.589 8.7 3.061 7.468 3.773c-1.107.639-1.6 2.124-1.379 4.182.018.175.067.365.095.545-2.127.819-3.466 2.071-3.466 3.5 0 1.429 1.339 2.681 3.466 3.5-.028.18-.077.37-.095.545-.218 2.058.272 3.543 1.379 4.182.376.213.803.322 1.235.316a5.987 5.987 0 0 0 3.514-1.56 5.992 5.992 0 0 0 3.515 1.56 2.44 2.44 0 0 0 1.236-.316c1.106-.639 1.6-2.124 1.379-4.182-.019-.175-.067-.365-.1-.545 2.132-.819 3.471-2.071 3.471-3.5Zm-6.01-7.548a1.5 1.5 0 0 1 .76.187c.733.424 1.055 1.593.884 3.212-.012.106-.043.222-.058.33-.841-.243-1.7-.418-2.57-.523a16.165 16.165 0 0 0-1.747-1.972 4.9 4.9 0 0 1 2.731-1.234Zm-7.917 8.781c.172.34.335.68.529 1.017.194.337.395.656.6.969a14.09 14.09 0 0 1-1.607-.376 14.38 14.38 0 0 1 .478-1.61Zm-.479-4.076a14.085 14.085 0 0 1 1.607-.376c-.205.313-.405.634-.6.969-.195.335-.357.677-.529 1.017-.19-.527-.35-1.064-.478-1.61ZM8.3 12a19.32 19.32 0 0 1 .888-1.75c.33-.568.69-1.118 1.076-1.65.619-.061 1.27-.1 1.954-.1.684 0 1.333.035 1.952.1a19.63 19.63 0 0 1 1.079 1.654c.325.567.621 1.15.887 1.746a18.869 18.869 0 0 1-1.953 3.403 19.218 19.218 0 0 1-3.931 0 20.169 20.169 0 0 1-1.066-1.653A19.324 19.324 0 0 1 8.3 12Zm7.816 2.25c.2-.337.358-.677.53-1.017.191.527.35 1.065.478 1.611a14.48 14.48 0 0 1-1.607.376c.202-.314.404-.635.597-.97h.002Zm.53-3.483c-.172-.34-.335-.68-.53-1.017a20.214 20.214 0 0 0-.6-.97c.542.095 1.078.22 1.606.376a14.111 14.111 0 0 1-.478 1.611h.002ZM12.217 6.34c.4.375.777.773 1.13 1.193-.37-.02-.746-.033-1.129-.033s-.76.013-1.131.033c.353-.42.73-.817 1.13-1.193Zm-4.249-1.7a1.5 1.5 0 0 1 .76-.187 4.9 4.9 0 0 1 2.729 1.233A16.253 16.253 0 0 0 9.71 7.658c-.87.105-1.728.28-2.569.524-.015-.109-.047-.225-.058-.331-.171-1.619.151-2.787.885-3.211ZM3.718 12c0-.9.974-1.83 2.645-2.506.218.857.504 1.695.856 2.506-.352.811-.638 1.65-.856 2.506C4.692 13.83 3.718 12.9 3.718 12Zm4.25 7.361c-.734-.423-1.056-1.593-.885-3.212.011-.106.043-.222.058-.331.84.243 1.697.418 2.564.524a16.37 16.37 0 0 0 1.757 1.982c-1.421 1.109-2.714 1.488-3.494 1.037Zm3.11-2.895c.374.021.753.034 1.14.034.387 0 .765-.013 1.139-.034a14.4 14.4 0 0 1-1.14 1.215 14.248 14.248 0 0 1-1.139-1.215Zm5.39 2.895c-.782.451-2.075.072-3.5-1.038a16.248 16.248 0 0 0 1.757-1.981 16.41 16.41 0 0 0 2.565-.523c.015.108.046.224.058.33.175 1.619-.148 2.789-.88 3.212Zm1.6-4.854A16.563 16.563 0 0 0 17.216 12c.352-.812.638-1.65.856-2.507 1.671.677 2.646 1.607 2.646 2.507 0 .9-.975 1.83-2.646 2.507h-.004Z" />
                                         <path
                                             d="M12.215 13.773a1.792 1.792 0 1 0-1.786-1.8v.006a1.787 1.787 0 0 0 1.786 1.794Z" />
                                     </svg>
-                                    <span class="hidden md:inline text-gray-500">About_Us.jsx</span>
+                                    <span class="md:inline text-gray-200">About_Us.jsx</span>
                                 </a>
                             </li>
                         </ul>
@@ -282,7 +281,7 @@
                         <ul class="flex items-center space-x-2 mt-4">
                             <li>
                                 <a href="Skills.html" class="flex items-center space-x-2" aria-label="Skills">
-                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                         viewBox="0 0 24 24">
                                         <path fill-rule="evenodd"
@@ -292,31 +291,32 @@
                                             d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12c0 .556-.227 1.06-.593 1.422A.999.999 0 0 1 20.5 20H4a2.002 2.002 0 0 1-2-2V6Zm6.892 12 3.833-5.356-3.99-4.322a1 1 0 0 0-1.549.097L4 12.879V6h16v9.95l-3.257-3.619a1 1 0 0 0-1.557.088L11.2 18H8.892Z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    <span class="text-gray-500">Skills.jpg</span>
+                                    <span class="text-gray-200">Skills.jpg</span>
                                 </a>
                             </li>
                         </ul>
+
                         <ul class="flex items-center space-x-2 mt-4">
                             <li>
                                 <a href="Certificate.html" class="flex items-center space-x-2">
-                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                         viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2"
                                             d="M5 17v-5h1.5a1.5 1.5 0 1 1 0 3H5m12 2v-5h2m-2 3h2M5 10V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1v6M5 19v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1M10 3v4a1 1 0 0 1-1 1H5m6 4v5h1.375A1.627 1.627 0 0 0 14 15.375v-1.75A1.627 1.627 0 0 0 12.375 12H11Z" />
                                     </svg>
-
-                                    <span class="text-gray-500">Cert._Experience.pdf</span>
+                        
+                                    <span class="text-gray-200">Cert._Experience.pdf</span>
                                 </a>
                             </li>
                         </ul>
 
 
-                        <ul class="flex items-center space-x-2 mt-4">
+                        <ul class="flex items-center space-x-2 mt-4 border-b pb-2 border-purple-500">
                             <li>
                                 <a href="Contact.html" class="flex items-center space-x-2" aria-label="Contact Us CSS">
-                                    <svg class="w-6 h-6 text-gray-400 dark:text-white" aria-hidden="true"
+                                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                         viewBox="0 0 24 24">
                                         <path
@@ -328,16 +328,16 @@
                         </ul>
 
 
-                        <ul class="flex items-center space-x-2 mt-4">
+                        <ul class="flex items-center space-x-2 mt-2">
                             <li>
                                 <a href="Project.html" class="flex items-center space-x-2" aria-label="Project Config">
-                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                         viewBox="0 0 24 24">
                                         <path
                                             d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z" />
                                     </svg>
-                                    <span class="text-gray-500">Project.config.js</span>
+                                    <span class="text-gray-200">Project.config.js</span>
                                 </a>
                             </li>
                         </ul>
@@ -348,12 +348,11 @@
                 </div>
             </div>
         </aside>
-
         <div class="mt-8 sm:ml-64 border-b border-purple-700 h-screen" style="background-color: #0c0020;">
 
             <div class="bg-gray-900 text-gray-300 p-1 mt-12 border-b border-gray-700 overflow-hidden ">
                 <!-- Tab bar -->
-                <div class="flex items-center flex-wrap space-x-1 bg-gray-900">
+                <div class="flex items-center flex-wrap space-x-1 bg-gray-900" id="tabs">
                     <!-- Welcome tab -->
                     <div class="px-3 py-1 rounded-t flex items-center">
                         <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -385,7 +384,7 @@
                         <a href="About.html"><span>About_Us.jsx</span></a>
                     </div>
                     <div class="bg-gray-800 px-3 py-1 rounded-t flex items-center bg-gray-900">
-                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        <svg class="w-6 h-6 text-gray-400 dark:text-white" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M13 10a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H14a1 1 0 0 1-1-1Z"
@@ -398,7 +397,7 @@
                         <a href="Skills.html"><span>Skills.jpg</span></a>
                     </div>
                     <div class="bg-gray-900 px-3 py-1 rounded-t flex items-center">
-                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        <svg class="w-6 h-6 text-gray-400 dark:text-white" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5 17v-5h1.5a1.5 1.5 0 1 1 0 3H5m12 2v-5h2m-2 3h2M5 10V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1v6M5 19v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1M10 3v4a1 1 0 0 1-1 1H5m6 4v5h1.375A1.627 1.627 0 0 0 14 15.375v-1.75A1.627 1.627 0 0 0 12.375 12H11Z" />
