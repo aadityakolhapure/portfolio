@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-    
+
 
     <style>
         #main {
@@ -33,16 +33,18 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
-
-     
-
     </style>
 </head>
 
-<body class="bg-gray-800 text-white">
+<body class="bg-[#0c0020] text-white">
     <div id="loader" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-100 z-50">
         <div class="spinner"></div>
     </div>
@@ -117,27 +119,29 @@
                     <div>
                         <!-- Search icon -->
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200" width="24" height="24" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200" width="24" height="24"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
                         </button>
 
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg class="w-6 h-6" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linejoin="round" stroke-width="2"
                                     d="M10 3v4a1 1 0 0 1-1 1H5m14-4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z" />
                             </svg>
                         </button>
 
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 7.205c4.418 0 8-1.165 8-2.602C20 3.165 16.418 2 12 2S4 3.165 4 4.603c0 1.437 3.582 2.602 8 2.602ZM12 22c4.963 0 8-1.686 8-2.603v-4.404c-.052.032-.112.06-.165.09a7.75 7.75 0 0 1-.745.387c-.193.088-.394.173-.6.253-.063.024-.124.05-.189.073a18.934 18.934 0 0 1-6.3.998c-2.135.027-4.26-.31-6.3-.998-.065-.024-.126-.05-.189-.073a10.143 10.143 0 0 1-.852-.373 7.75 7.75 0 0 1-.493-.267c-.053-.03-.113-.058-.165-.09v4.404C4 20.315 7.037 22 12 22Zm7.09-13.928a9.91 9.91 0 0 1-.6.253c-.063.025-.124.05-.189.074a18.935 18.935 0 0 1-6.3.998c-2.135.027-4.26-.31-6.3-.998-.065-.024-.126-.05-.189-.074a10.163 10.163 0 0 1-.852-.372 7.816 7.816 0 0 1-.493-.268c-.055-.03-.115-.058-.167-.09V12c0 .917 3.037 2.603 8 2.603s8-1.686 8-2.603V7.596c-.052.031-.112.059-.165.09a7.816 7.816 0 0 1-.745.386Z"/>
-                              </svg>
-                              
+                            <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 7.205c4.418 0 8-1.165 8-2.602C20 3.165 16.418 2 12 2S4 3.165 4 4.603c0 1.437 3.582 2.602 8 2.602ZM12 22c4.963 0 8-1.686 8-2.603v-4.404c-.052.032-.112.06-.165.09a7.75 7.75 0 0 1-.745.387c-.193.088-.394.173-.6.253-.063.024-.124.05-.189.073a18.934 18.934 0 0 1-6.3.998c-2.135.027-4.26-.31-6.3-.998-.065-.024-.126-.05-.189-.073a10.143 10.143 0 0 1-.852-.373 7.75 7.75 0 0 1-.493-.267c-.053-.03-.113-.058-.165-.09v4.404C4 20.315 7.037 22 12 22Zm7.09-13.928a9.91 9.91 0 0 1-.6.253c-.063.025-.124.05-.189.074a18.935 18.935 0 0 1-6.3.998c-2.135.027-4.26-.31-6.3-.998-.065-.024-.126-.05-.189-.074a10.163 10.163 0 0 1-.852-.372 7.816 7.816 0 0 1-.493-.268c-.055-.03-.115-.058-.167-.09V12c0 .917 3.037 2.603 8 2.603s8-1.686 8-2.603V7.596c-.052.031-.112.059-.165.09a7.816 7.816 0 0 1-.745.386Z" />
+                            </svg>
+
                         </button>
 
                         <!-- Git icon -->
@@ -172,8 +176,8 @@
 
                         <!-- Extensions icon -->
                         <button class="text-gray-400 hover:text-white focus:outline-none m-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200 dark:text-white" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200 dark:text-white"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                             </svg>
@@ -239,8 +243,8 @@
                             <li>
                                 <a href="About.html"
                                     class="flex items-center space-x-2 text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
-                                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="M21.718 12c0-1.429-1.339-2.681-3.467-3.5.029-.18.077-.37.1-.545.217-2.058-.273-3.543-1.379-4.182-1.235-.714-2.983-.186-4.751 1.239C10.45 3.589 8.7 3.061 7.468 3.773c-1.107.639-1.6 2.124-1.379 4.182.018.175.067.365.095.545-2.127.819-3.466 2.071-3.466 3.5 0 1.429 1.339 2.681 3.466 3.5-.028.18-.077.37-.095.545-.218 2.058.272 3.543 1.379 4.182.376.213.803.322 1.235.316a5.987 5.987 0 0 0 3.514-1.56 5.992 5.992 0 0 0 3.515 1.56 2.44 2.44 0 0 0 1.236-.316c1.106-.639 1.6-2.124 1.379-4.182-.019-.175-.067-.365-.1-.545 2.132-.819 3.471-2.071 3.471-3.5Zm-6.01-7.548a1.5 1.5 0 0 1 .76.187c.733.424 1.055 1.593.884 3.212-.012.106-.043.222-.058.33-.841-.243-1.7-.418-2.57-.523a16.165 16.165 0 0 0-1.747-1.972 4.9 4.9 0 0 1 2.731-1.234Zm-7.917 8.781c.172.34.335.68.529 1.017.194.337.395.656.6.969a14.09 14.09 0 0 1-1.607-.376 14.38 14.38 0 0 1 .478-1.61Zm-.479-4.076a14.085 14.085 0 0 1 1.607-.376c-.205.313-.405.634-.6.969-.195.335-.357.677-.529 1.017-.19-.527-.35-1.064-.478-1.61ZM8.3 12a19.32 19.32 0 0 1 .888-1.75c.33-.568.69-1.118 1.076-1.65.619-.061 1.27-.1 1.954-.1.684 0 1.333.035 1.952.1a19.63 19.63 0 0 1 1.079 1.654c.325.567.621 1.15.887 1.746a18.869 18.869 0 0 1-1.953 3.403 19.218 19.218 0 0 1-3.931 0 20.169 20.169 0 0 1-1.066-1.653A19.324 19.324 0 0 1 8.3 12Zm7.816 2.25c.2-.337.358-.677.53-1.017.191.527.35 1.065.478 1.611a14.48 14.48 0 0 1-1.607.376c.202-.314.404-.635.597-.97h.002Zm.53-3.483c-.172-.34-.335-.68-.53-1.017a20.214 20.214 0 0 0-.6-.97c.542.095 1.078.22 1.606.376a14.111 14.111 0 0 1-.478 1.611h.002ZM12.217 6.34c.4.375.777.773 1.13 1.193-.37-.02-.746-.033-1.129-.033s-.76.013-1.131.033c.353-.42.73-.817 1.13-1.193Zm-4.249-1.7a1.5 1.5 0 0 1 .76-.187 4.9 4.9 0 0 1 2.729 1.233A16.253 16.253 0 0 0 9.71 7.658c-.87.105-1.728.28-2.569.524-.015-.109-.047-.225-.058-.331-.171-1.619.151-2.787.885-3.211ZM3.718 12c0-.9.974-1.83 2.645-2.506.218.857.504 1.695.856 2.506-.352.811-.638 1.65-.856 2.506C4.692 13.83 3.718 12.9 3.718 12Zm4.25 7.361c-.734-.423-1.056-1.593-.885-3.212.011-.106.043-.222.058-.331.84.243 1.697.418 2.564.524a16.37 16.37 0 0 0 1.757 1.982c-1.421 1.109-2.714 1.488-3.494 1.037Zm3.11-2.895c.374.021.753.034 1.14.034.387 0 .765-.013 1.139-.034a14.4 14.4 0 0 1-1.14 1.215 14.248 14.248 0 0 1-1.139-1.215Zm5.39 2.895c-.782.451-2.075.072-3.5-1.038a16.248 16.248 0 0 0 1.757-1.981 16.41 16.41 0 0 0 2.565-.523c.015.108.046.224.058.33.175 1.619-.148 2.789-.88 3.212Zm1.6-4.854A16.563 16.563 0 0 0 17.216 12c.352-.812.638-1.65.856-2.507 1.671.677 2.646 1.607 2.646 2.507 0 .9-.975 1.83-2.646 2.507h-.004Z" />
                                         <path
@@ -280,7 +284,7 @@
                                             stroke-width="2"
                                             d="M5 17v-5h1.5a1.5 1.5 0 1 1 0 3H5m12 2v-5h2m-2 3h2M5 10V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1v6M5 19v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1M10 3v4a1 1 0 0 1-1 1H5m6 4v5h1.375A1.627 1.627 0 0 0 14 15.375v-1.75A1.627 1.627 0 0 0 12.375 12H11Z" />
                                     </svg>
-                        
+
                                     <span class="text-gray-200">Cert._Experience.pdf</span>
                                 </a>
                             </li>
@@ -373,12 +377,12 @@
                         <a href="Skills.html"><span>Skills.jpg</span></a>
                     </div>
                     <div class="bg-gray-900 px-3 py-1 rounded-t flex items-center">
-                        <svg class="w-6 h-6 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" fill="none" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-gray-400 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5 17v-5h1.5a1.5 1.5 0 1 1 0 3H5m12 2v-5h2m-2 3h2M5 10V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1v6M5 19v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1M10 3v4a1 1 0 0 1-1 1H5m6 4v5h1.375A1.627 1.627 0 0 0 14 15.375v-1.75A1.627 1.627 0 0 0 12.375 12H11Z" />
                         </svg>
-                    
+
                         <a href="Certificate.html"><span>Certification_Experience.pdf</span></a>
                     </div>
                     <!-- script.js tab -->
@@ -408,22 +412,24 @@
 
 
             <div id="main">
-                <div class="bg-gray-900 text-white flex flex-col md:flex-row items-center justify-start relative h-screen p-6" style="height: 100vh;">
+                <div class="bg-gray-900 text-white flex flex-col md:flex-row items-center justify-start relative h-screen p-6"
+                    style="height: 50vh;">
 
                     <!-- Background Image -->
                     <div class="absolute inset-0">
                         <img src="image/123.jpg" alt="Background" class="w-full h-full object-cover">
                     </div>
-                    
+
                     <!-- Blurred Overlay -->
                     <div class="absolute inset-0 bg-gray-900 bg-opacity-50 backdrop-blur-sm"></div>
-                    
+
                     <!-- Content container -->
                     <div class="z-10 text-center md:text-left max-w-full md:max-w-2xl px-4 md:px-6 mt-10 md:mt-0">
                         <h1 class="text-4xl md:text-6xl font-bold">Aaditya Kolhapure</h1>
                         <p class="text-lg md:text-xl text-gray-400 mb-6 text-coral-500 pt-5" id="animatedText11">|</p>
-                    
-                        <div class="space-y-4 md:space-y-0 md:space-x-4 mb-6 flex flex-col md:flex-row items-center justify-center md:justify-start">
+
+                        <div
+                            class="space-y-4 md:space-y-0 md:space-x-4 mb-6 flex flex-col md:flex-row items-center justify-center md:justify-start">
                             <a href="https://drive.google.com/file/d/1Arki0UKjTkhzJ4K7VI8NCsML24MxeQmr/view?usp=sharing"
                                 target="_blank"
                                 class="bg-coral-500 text-white px-6 py-3 rounded hover:text-purple-700 transition duration-300 w-full md:w-auto text-center">
@@ -435,11 +441,113 @@
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
-            
+
+
+
+            <div class="mb-4  border-gray-200 border-t bg-gray-800">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab"
+                    data-tabs-toggle="#default-tab-content" role="tablist">
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab"
+                            data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">Terminal</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button
+                            class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                            id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                            aria-controls="dashboard" aria-selected="false">Output</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button
+                            class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                            id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
+                            aria-controls="settings" aria-selected="false">Console</button>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="default-tab-content">
+                <div class="hidden p-2 rounded-lg bg-[#0c0020]" id="profile" role="tabpanel"
+                    aria-labelledby="profile-tab">
+                    <div class="p-2 text-white text-base font-mono bg-[#0c0020]" id="default-tab-skill">
+                        <div class="" id="default-tab-skill">
+                            <div class=" flex items-center">
+                                <span class="mr-2 text-white">PS C:\portfolio></span>
+                                <span class="text-gray-300">cd skills</span>
+                            </div>
+                            <div class="flex items-center mt-2">
+                                <span class="mr-2 text-white">PS C:\portfolio\skills></span>
+                                <span class="text-gray-300">dir</span>
+                            </div>
+                            <div class="pl-4 text-gray-400 ">
+                                <p>JavaScript, PHP, Laravel, Tailwind CSS</p>
+                            </div>
+
+                            <!-- <div class="flex items-center text-lg mt-2">
+                                <span class="mr-2 text-white">PS C:\portfolio\skills></span>
+                                <span class="text-gray-300">cd ..</span>
+                            </div>-->
+
+                            <div class="flex items-center mt-2">
+                                <span class="mr-2 text-white">PS C:\portfolio></span>
+                                <span class="text-gray-300">cd projects</span>
+                            </div>
+
+
+                            <div class="flex items-center mt-4">
+                                <span class="mr-2 text-white">PS C:\portfolioVs\projects></span>
+                                <span class="text-gray-300">dir</span>
+                            </div>
+                            <div class="pl-4 text-gray-400  text-lg">
+                                <p>Establishment Section, New Website, Spam Identifier</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-[#0c0020]" id="dashboard" role="tabpanel"
+                    aria-labelledby="dashboard-tab">
+                    <span class="text-sm text-white sm:text-center">© 2024 <a href=""
+                            class="hover:underline">Aaditya™</a>. All Rights Reserved.
+                    </span>
+                    <ul
+                        class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                        <li>
+                            <a href="About.html" class="hover:underline me-4 md:me-6">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel"
+                    aria-labelledby="settings-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                            class="font-medium text-gray-800 dark:text-white">Settings tab's associated
+                            content</strong>. Clicking another tab will toggle the visibility of this one for the next.
+                        The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel"
+                    aria-labelledby="contacts-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                            class="font-medium text-gray-800 dark:text-white">Contacts tab's associated
+                            content</strong>. Clicking another tab will toggle the visibility of this one for the next.
+                        The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
